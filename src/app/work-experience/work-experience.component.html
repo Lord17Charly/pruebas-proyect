@@ -1,0 +1,15 @@
+<h3>Experiencia Laboral</h3>
+<ul *ngFor="let work of workExperience">
+    <li>
+        <strong>Fecha:</strong> {{work.fecha}} <br>
+        <strong>Ubicación:</strong> {{work.ubicacion}} <br>
+        <strong>Puesto:</strong> {{work.puesto}} <br>
+        <strong>Empresa:</strong> {{work.empresa}} <br>
+        <strong>Logros:</strong>
+        <ul>
+            <li *ngFor="let logro of work.logros">
+                {{logro.descripcion}}
+            </li>
+        </ul>
+    </li>
+</ul>
