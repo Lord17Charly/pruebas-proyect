@@ -17,9 +17,10 @@ jobs:
       - name: build angular, output in dist/pruebas-proyect
         run: |
             CI=false npm run build
+            
       - name: show dir
         run: |
-            ls -la dist/pruebas-proyect/browser
+            ls -la dist/pruebas-proyect/server
             
       - name: download, run httpd image, container name serving_base
         run:
