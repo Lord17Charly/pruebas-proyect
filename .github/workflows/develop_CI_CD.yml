@@ -44,7 +44,7 @@ jobs:
       - name: list container
         run:
           docker exec serving_base ls -la /usr/local/apache2/htdocs
-      name: Develop CI_CD
+      - name: Develop CI_CD
 on: 
   push:
     branches: [ "develop"]
@@ -89,8 +89,9 @@ jobs:
 
           
       - name: Build the custom Docker image
-        run: docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}"
-             serving_base ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+        run: |
+          docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}" serving_base ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+
 
       - name: show docker images
         run: docker images
@@ -102,6 +103,7 @@ jobs:
         run: 
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
-      -name: Docker Push
-         run: docker push ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}
+      - name: Docker Push
+        run: |
+          docker push ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
 }
