@@ -21,7 +21,7 @@ jobs:
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
           
-      - name: build angular, output in dist/mycv
+      - name: build angular, output in dist/pruebas_proyect
         run:
           CI=false npm run build
 
