@@ -51,6 +51,7 @@ jobs:
         run: |
           docker commit --change "ENV MODEL_NAME=${{secrets.MODEL_NAME}}" serving_base ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
 
+
       - name: Show Docker images
         run: |
           docker images
