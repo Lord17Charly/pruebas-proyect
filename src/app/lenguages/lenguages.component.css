@@ -1,0 +1,21 @@
+/* Estilos generales para los títulos */
+h3 {
+    font-size: 1.8em; /* Tamaño del título */
+    color: #3498db; /* Color del título */
+    border-bottom: 2px solid #3498db; /* Línea inferior del título */
+    padding-bottom: 5px; /* Espacio debajo del título */
+    margin-bottom: 15px; /* Margen inferior del título */
+    font-weight: bold; /* Peso del texto */
+}
+
+/* Estilo para las listas generales */
+ul {
+    list-style: none; /* Sin estilo de lista */
+    padding: 0; /* Sin padding */
+}
+
+li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+    padding-left: 10px; /* Espacio a la izquierda */
+    position: relative; 
+}
