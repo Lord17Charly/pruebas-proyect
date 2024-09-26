@@ -1,0 +1,40 @@
+/* Estilos generales para los títulos */
+h3 {
+    font-size: 1.8em;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilo para las listas generales */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+    padding-left: 10px;
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+
+
+
+/* Estilo para la tabla */
+table {
+    width: 100%; /* Ajustar el ancho de la tabla */
+    margin-top: 20px; /* Espacio superior para la tabla */
+    border-collapse: collapse; /* Para evitar bordes dobles */
+}
+
+td {
+    padding: 10px; /* Espaciado dentro de las celdas */
+    vertical-align: top; /* Alinear contenido hacia la parte superior */
+}
+
+

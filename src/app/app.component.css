@@ -1,81 +1,125 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Contenedor del CV */
+table {
+    width: 100%;
+    border-spacing: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera */
+table tr:first-child {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+table tr:first-child td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* Estilos de la cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+header ul {
+    list-style: none;
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
-}
-
-.header p {
+header ul li {
     margin: 5px 0;
-    font-size: 1.2em;
-    color: #777;
 }
 
-section {
-    margin-bottom: 20px;
+/* Sección de dos columnas */
+td {
+    padding: 15px;
+    vertical-align: top;
 }
 
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+td ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Secciones de logros y habilidades */
+h2 {
     font-size: 1.5em;
-    color: #333;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }
 
-.contact, .skills, .projects, .education, .experience {
-    margin-top: 20px;
-}
-
-.contact p, .experience .job p, .education .degree, .projects .project {
-    margin: 5px 0;
-}
-
-.experience .job, .education .degree, .projects .project {
+/* Estilos para experiencia, habilidades, intereses, etc. */
+.app-section {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
+.app-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #2980b9;
+}
+
+.app-section ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+/* Botones de habilidades (skills) */
 .skills ul {
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .skills ul li {
-    background-color: #e3e3e3;
-    margin: 5px 0;
-    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Logros */
+.achievements {
+    padding: 15px;
+    background-color: #e0e4e5;
     border-radius: 5px;
 }
 
-.experience .job h3, .education .degree h3, .projects .project h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
+/* Columnas */
+td {
+    vertical-align: top;
 }
 
-.experience .job span, .education .degree span {
-    font-style: italic;
-    font-size: 0.9em;
-    color: #555;
+td:first-child {
+    width: 60%;
+}
+
+td:last-child {
+    width: 40%;
 }

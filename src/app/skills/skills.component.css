@@ -15,7 +15,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Espaciado reducido para las listas */
     padding-left: 10px;
     position: relative;
     font-size: 1.1em;
@@ -24,7 +24,7 @@ li {
 
 /* Añadir un icono de marcador para cada elemento */
 li::before {
-    content: "•";
+    content: "•"; /* Marcador de lista */
     color: #3498db;
     font-weight: bold;
     display: inline-block;
@@ -36,6 +36,8 @@ li::before {
 strong {
     color: #2c3e50;
     font-weight: bold;
+    display: block; /* Asegura que cada fuerte ocupe una línea completa */
+    margin-top: 15px; /* Añade espacio entre cada sección */
 }
 
 /* Estilos para las sublistas dentro de los logros */
@@ -53,7 +55,7 @@ li ul li {
 
 /* Añadir un pequeño icono de marcador para los logros */
 li ul li::before {
-    content: "–";
+    content: "–"; /* Marcador para sublistas */
     color: #3498db;
     font-weight: bold;
     display: inline-block;

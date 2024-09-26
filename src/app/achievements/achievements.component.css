@@ -1,6 +1,6 @@
 /* Estilos generales para los títulos */
-h3 {
-    font-size: 1.8em;
+h2 {
+    font-size: 2em; /* Mayor tamaño para títulos de nivel 2 */
     color: #3498db;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
@@ -15,7 +15,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
     padding-left: 10px;
     position: relative;
     font-size: 1.1em;
@@ -24,7 +24,7 @@ li {
 
 /* Añadir un icono de marcador para cada elemento */
 li::before {
-    content: "•";
+    content: "•"; /* Marcador de lista */
     color: #3498db;
     font-weight: bold;
     display: inline-block;
@@ -32,31 +32,13 @@ li::before {
     margin-left: -1em;
 }
 
-/* Estilo para el strong (títulos de cada dato) */
+/* Estilo para el strong (títulos de cada certificación) */
 strong {
     color: #2c3e50;
     font-weight: bold;
 }
 
-/* Estilos para las sublistas dentro de los logros */
-li ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-li ul li {
-    margin-bottom: 5px;
-    padding-left: 5px;
-    font-size: 1em;
-    color: #666;
-}
-
-/* Añadir un pequeño icono de marcador para los logros */
-li ul li::before {
-    content: "–";
-    color: #3498db;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+/* Asegurar que el strong tenga un espaciado adecuado */
+li strong {
+    margin-right: 5px; /* Añadir un poco de espacio después del fuerte */
 }
